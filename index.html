@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="entById">
+<head>🔥🔥🔢🔥🔥
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lottery Number Generator</title>
+</head>
+<body>
+  <link rel="stylesheet" href="lt.css">
+<h1>Lottery</h1>
+<h2>Predictor</h2>
+<p><Strong>Here are your 5 lucky👌 numbers:👇👇👇👇</p</strong>
+<div class="number-grid">
+ </div>
+<marquee class="m1" behavior="scroll" direction="left">it Might not be Accurate but Try</marquee>
+<marquee behavior="bounce" direction="right">
+<strong class="Warn">PLAY RESPONSIBILY 👍</strong></marquee>
+</div>
+<script>
+  const numbers = Array.from({ length: 5 }, () => Math.floor(Math.random() * 90));
+
+// Create a grid container
+const gridContainer = document.querySelector('.number-grid');
+
+// Create and append number boxes to the grid container
+numbers.forEach((number) => {
+  const numberBox = document.createElement('div');
+  numberBox.classList.add('number-box');
+  numberBox.textContent = number;
+  gridContainer.appendChild(numberBox);
+});
+</script>
+</body>
+</html>
